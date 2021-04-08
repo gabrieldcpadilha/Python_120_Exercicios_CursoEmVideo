@@ -26,3 +26,20 @@ O valor 9 apareceu 1 vezes
 O valor 3 APARECEU NA 4ª posição.
 Os valores pares digitados foram 2
 """
+num = (int(input('Digite um valor: ')),
+       int(input('Digite um valor: ')),
+       int(input('Digite um valor: ')),
+       int(input('Digite um valor: ')))
+
+print(f'Você digitou os valores: {num}')
+print(f'O valor 9 apareceu {num.count(9)} vezes')
+
+if 3 in num:
+    print(f'O valor 3 APARECEU na {num.index(3)+1} posição')
+else:
+    print(f'O valor 3 NÃO APARECEU EM NENHUMA posição')
+
+print(f'Os valores pares digitados foram: ', end='')
+for n in num:
+    if n % 2 == 0:
+        print(n, end=' ')

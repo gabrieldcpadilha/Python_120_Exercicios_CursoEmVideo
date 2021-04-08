@@ -11,3 +11,10 @@ Na palavra PROGRAMAR temos o a a
 Na palavra LINGUAGEM temos i u a e
 Na palavra PYTHON temos o
 """
+
+palavras = ('aprender', 'programar', 'linguagem', 'python')
+for p in palavras:
+    print(f'\nNa palavra {p.upper()} temos: ', end='')
+    for letra in p:
+        if letra in 'aeiou':
+            print(letra, end=' ')
