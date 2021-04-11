@@ -5,7 +5,7 @@ while True:
     if resposta == 'n':
         break
 
-print('='*40)
+print('='*30)
 print(f'Você digitou {len(valores)} elementos')
 valores.sort(reverse=True)
 print(f'Os valores em ordem decrescente são {valores}')
