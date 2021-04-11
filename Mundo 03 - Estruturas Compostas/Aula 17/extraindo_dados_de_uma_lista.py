@@ -1,8 +1,8 @@
 valores = []
 while True:
     valores.append(int(input('Digite um valor: ')))
-    resposta = str(input('Quer continuar? [s/n]')).lower().strip()[0]
-    if resposta == 'n':
+    resposta = str(input('Quer continuar? [s/n]'))
+    if resposta in 'Nn':
         break
 
 print('='*30)
